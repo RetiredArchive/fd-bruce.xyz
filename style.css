@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url("harley.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("PlaywriteIS-VariableFont_wght.ttf") format("truetype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+}
+
+#s {
+    padding-top: 2rem;
+}
+
+#content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+#content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+p {
+    margin-top: 1rem;
+    color: white;
+    font-family: "Roboto";
+
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+    color: #222;
+    font-size: 2rem;
+    text-shadow: 0 0 16px;
+    text-align: center;
+    font-family: 'Product Sans';
+}
+
+img {
+    border-radius: 1rem;
+    margin-top: 2rem;
+    max-height: 150rem;
+    max-width: 50rem;
+    transition: transform 0.5s ease-out;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
